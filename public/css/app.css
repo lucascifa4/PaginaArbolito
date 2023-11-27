@@ -1,0 +1,61 @@
+
+.navbar {
+    background-color: #028a16; 
+    color: white;
+    font-size: large;
+}
+
+.navbar a {
+    color: white;
+}
+
+.btn {
+    background-color: #ffffff;  
+}
+
+.dropdown-menu{
+    background-color: #028a16; 
+    color: #ffffff;
+}
+.navbar a:hover {
+    color: #ffffff;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.fotos {
+    max-width: 500px;
+    margin: auto;
+}
+
+main {
+    flex: 1; 
+}
+
+#footer {
+    
+    margin-bottom: 0;
+    padding: 300px 0 100px;
+    margin-top: 50px;
+}
+.btn.btn-success.m-1 {
+    color: black;
+    background-color: #28a745;
+    border-color: #28a745; 
+}
+
+.btn.btn-success.m-1:hover 
+{
+    background-color: #28a745;
+    border-color: #28a745; 
+    color: black; 
+}
