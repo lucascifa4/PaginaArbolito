@@ -1,4 +1,3 @@
-
 .navbar {
     background-color: #028a16; 
     color: white;
@@ -24,7 +23,7 @@ html, body {
     height: 100%;
 }
 
-body {
+.body {
     margin: 0;
     padding: 0;
     background-image: url("/img/fondo2.jpg");
@@ -36,16 +35,18 @@ body {
     max-width: 500px;
     margin: auto;
 }
+.carousel-inner{
+    width: 500px;
+}
 
 main {
     flex: 1; 
 }
 
 #footer {
+    position: absolute;
+    bottom: 0;
     
-    margin-bottom: 0;
-    padding: 300px 0 100px;
-    margin-top: 50px;
 }
 .btn.btn-success.m-1 {
     color: black;
@@ -59,3 +60,30 @@ main {
     border-color: #28a745; 
     color: black; 
 }
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  

@@ -25,8 +25,8 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <body class="body">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,30 +40,25 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Arbolito
                     </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu slide-bottom">
                             <li><a class="dropdown-item" href="{{ route('create.usuarios') }}">Crear Usuario</a></li>
                             <li><a class="dropdown-item" href="{{ route('create.usuarios') }}">Iniciar Sesión</a></li>
-                            <li><a class="dropdown-item" href="#">Carrito</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                @if($usuario)
+                <div class="d-flex">
+                    Bienvenido {{$usuario->nombre ?? 'invitado'}}
                 </div>
+                @endif
             </div>
         </nav>
-        <div class="row">
-            <div class="content" id="content">         
-                @yield('content')
-            </div>
+        <div class="content" id="content">         
+            @yield('content')
         </div>
-        <footer id="footer">
+        <footer id="footer" class="w-100">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Contacto</a>
-                </div>
+                    <a class="navbar-brand" href="#" style="padding-left: 20px">Contacto</a>
             </nav>
         </footer>
     </body>

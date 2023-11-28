@@ -30,6 +30,6 @@ class UsuarioController extends Controller
             'contraseña' => $request->input('contraseña'),
         ]);
 
-        return redirect('create.usuarios')->with('usuario', $usuario);
+        return redirect('welcome')->with('usuario', $usuario);
     }
 }
