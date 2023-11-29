@@ -1,4 +1,4 @@
-<div class="modal fade" id="ModalUsuario" tabindex="-1" aria-labelledby="exampleModalUsuario" aria-hidden="true" >
+<div class="modal fade" id="ModalVotos" tabindex="-1" aria-labelledby="exampleModalVotos" aria-hidden="true" >
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -6,13 +6,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h2>Bienvenido a la página de votación de indumentaria!</h2>
-          <p>En esta página, podrá votar por su indumentaria favorita de entre las siguientes opciones:</p>
+          <h2>Cantidad de Votos</h2>
           <ul>
-            <li>Remera Varón.</li>
-            <li>Remera Mujer.</li>
-            <li>Campera azúl.</li>
-            <li>Campera verde.</li>
+            <li>Remera Varón. : {{$votos1}} Votos!</li>
+            <li>Remera Mujer. : {{$votos2}} Votos!</li>
+            <li>Campera azúl. : {{$votos3}} Votos!</li>
+            <li>Campera verde. : {{$votos4}} Votos!</li>
           </ul>
           <p>Para votar, simplemente haga clic en el botón "Votar" junto a la opción que prefiera.</p>
           <p>Recuerde que puede visitar nuestro sitio oficial para obtener más información.</p>

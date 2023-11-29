@@ -8,10 +8,10 @@ class Usuario extends Model
 {
     protected  $table = 'usuarios';
 
-    protected $fillable = ['nombre', 'apellido', 'dni', 'mail', 'contraseña'];
+    protected $fillable = ['mail', 'producto_id'];
 
     public function ventas()
     {
-        return $this->hasmany(Venta::class);
+        return $this->belongsTo(Producto::class);
     }
 }

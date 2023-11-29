@@ -20,8 +20,6 @@
         
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         @yield('css')
-         <!-- Carga de jQuery -->
-         <!-- jQuery, vinculado directo a cdn de google -->
         
     </head>
     <body class="body">
@@ -40,33 +38,28 @@
                         Arbolito
                     </a>
                         <ul class="dropdown-menu slide-bottom">
-                            @if(!isset($usuario))
-                                <li><a class="dropdown-item" href="{{ route('create.usuarios') }}">Crear Usuario</a></li>
-                            @endif
-                            @if(!isset($usuario))
-                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalUsuario">
-                                Iniciar Sesión
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ModalUsuario">
+                                Contactanos!
                             </a>
-                                @include('modalLogin')
-                            @endif
                         </ul>
                     </li>
                 </ul>
-                @if(isset($usuario))
-                <div class="d-flex">
-                    Bienvenido {{$usuario->nombre ?? 'invitado'}}
-                </div>
-                @endif
             </div>
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ModalVotos">
+                Votos hasta el momento! 
+            </a>
         </nav>
         <div class="content" id="content">         
+                @include('modalLogin')
+                @include('modalVotos')
             @yield('content')
         </div>
-        <footer id="footer" class="w-100">
+        <footer id="footer" class="w-100 mt-2">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <a class="navbar-brand" href="#" style="padding-left: 20px">Contacto</a>
+                <a class="navbar-brand" href="https://arbolitounionsocia.wixsite.com/uninsocialydeportiva" style="padding-left: 20px">Pagina Oficial</a>
             </nav>
         </footer>
+        <script src="{{asset('js/votos.js')}}"></script>
     </body>
 </html>
 

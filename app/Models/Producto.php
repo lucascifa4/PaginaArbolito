@@ -2,17 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Producto extends Model
 {
     protected  $table = 'productos';
 
-    protected $fillable = ['descripcion', 'precio', 'sucursal'];
+    protected $fillable = ['descripcion', 'votos'];
 
-    public function venta()
+    public function usuario()
     {
-        return $this->hasOne(Venta::class);
+        return $this->hasOne(Usuario::class);
     }
 }

@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pagina');
-})->name('welcome');
+//Route::get('/', function () { return view('pagina'); })->name('welcome');
 
-Route::get('/create-usuario', [UsuarioController::class, 'create'])->name('create.usuarios');
-Route::post('/store-usuario', [UsuarioController::class, 'store'])->name('store.usuarios');
+    
+Route::get('/', [UsuarioController::class, 'index'])->name('index');
+
+Route::get('/create-voto', [UsuarioController::class, 'create'])->name('create.voto');
+Route::post('/store-voto', [UsuarioController::class, 'storeVoto'])->name('store.voto');
 

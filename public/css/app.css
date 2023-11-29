@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #028a16; 
+    background-color: #128a02; 
     color: white;
     font-size: large;
 }
@@ -8,17 +8,20 @@
     color: white;
 }
 
-.btn {
-    background-color: #ffffff;  
-}
+.nav-link.dropdown-toggle {
+    text-decoration: none;
+    cursor: default;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+  }
 
 .dropdown-menu{
-    background-color: #028a16; 
+    background-color: #128a02; 
     color: #ffffff;
 }
-.navbar a:hover {
-    color: #ffffff;
-}
+
 html, body {
     height: 100%;
 }
@@ -26,15 +29,20 @@ html, body {
 .body {
     margin: 0;
     padding: 0;
-    background-image: url("/img/fondo2.jpg");
+    background-image: url("/img/fondo3.jpeg");
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 .fotos {
-    max-width: 500px;
+    max-width: fit-content;
     margin: auto;
 }
+.carousel-item{
+    height: 500px !important;
+    object-fit: contain !important;
+}
+
 .carousel-inner{
     width: 500px;
 }
@@ -50,17 +58,21 @@ main {
 }
 .btn.btn-success.m-1 {
     color: black;
-    background-color: #28a745;
-    border-color: #28a745; 
+    background-color: #128a02; 
 }
 
 .btn.btn-success.m-1:hover 
 {
-    background-color: #28a745;
-    border-color: #28a745; 
+    background-color: #128a02; 
+    border-color: #128a02; 
     color: black; 
 }
 
+.mail
+{
+    max-width: fit-content;
+    margin: auto;
+}
 .slide-bottom {
 	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -68,22 +80,22 @@ main {
 
 @-webkit-keyframes slide-bottom {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
       -webkit-transform: translateY(100px);
               transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(4px);
     }
   }
   @keyframes slide-bottom {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(100px);
-              transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(4px);
     }
   }
   
