@@ -6,16 +6,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h2>Cantidad de Votos</h2>
+          <h2><strong>Cantidad de Votos</strong></h2>
           <ul>
-            <li>Remera Varón. : {{$votos1}} Votos!</li>
-            <li>Remera Mujer. : {{$votos2}} Votos!</li>
-            <li>Campera azúl. : {{$votos3}} Votos!</li>
-            <li>Campera verde. : {{$votos4}} Votos!</li>
+          <li><h5><strong>Remera Varón: {{$votos1}} Votos</strong></li></h5>
+          <li><h5><strong>Remera Mujer: {{$votos2}} Votos</strong></li></h5>
+          <li><h5><strong>Campera azúl: {{$votos3}} Votos</strong></li></h5>
+          <li><h5><strong>Campera verde: {{$votos4}} Votos</strong></li></h5>
           </ul>
-          <p>Para votar, simplemente haga clic en el botón "Votar" junto a la opción que prefiera.</p>
-          <p>Recuerde que puede visitar nuestro sitio oficial para obtener más información.</p>
-          <a href="https://arbolitounionsocia.wixsite.com/uninsocialydeportiva" target="_blank" class="btn btn-primary">Visitar nuestro sitio oficial</a>
+          <p><strong>Para votar, simplemente haga clic en el botón "Votar" junto a la opción que prefiera.</strong></p>
+          <p><strong>Recuerde que puede visitar nuestro sitio oficial para obtener más información.</strong></p>
+          <a href="https://arbolitounionsocia.wixsite.com/uninsocialydeportiva" target="_blank" class="btn btn-success">Visitar nuestro sitio oficial</a>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">atras</button>
