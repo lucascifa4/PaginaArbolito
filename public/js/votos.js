@@ -8,3 +8,10 @@ $(document).ready(function(){
     console.log("ID del botón:", id);
     })
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  if ($usuario) {
+    document.getElementById('mail').style.display = 'block';
+  }
+});

@@ -65,7 +65,7 @@ class UsuarioController extends Controller
         $producto->save();
 
         if ($usuario) {
-            return redirect()->route('index')->with('usuario', $usuario);
+            return redirect()->route('index',compact('usuario'))->with('mensaje', 'Gracias por votar');
         } else {
             return redirect()->back()->withErrors(['mail' => 'El correo electrónico ya existe.']);
         }

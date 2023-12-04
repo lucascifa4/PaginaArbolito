@@ -9,10 +9,10 @@
           <h2><strong>Bienvenido a la página de votación de indumentaria!</strong></h2>
           <p><strong>En esta página, podrá votar por su indumentaria favorita de entre las siguientes opciones:</strong></p>
           <ul>
-          <li><strong>Remera Varón</strong></li>
-          <li><strong>Remera Mujer</strong></li>
-          <li><strong>Campera azúl</strong></li>
-          <li><strong>Campera verde</strong></li>
+            <li><strong>Campera verde</strong></li>
+            <li><strong>Campera azúl</strong></li>
+            <li><strong>Remera Varón</strong></li>
+            <li><strong>Remera Mujer</strong></li>
           </ul>
           <p><strong>Para votar, simplemente haga clic en el botón "Votar" junto a la opción que prefiera.</strong></p>
           <p><strong>Recuerde que puede visitar nuestro sitio oficial para obtener más información.</strong></p>
@@ -25,7 +25,7 @@
     </div>
     <style>
       .modal-content {
-        background-image: url('{{ asset('img/whipala.jpeg') }}'); 
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ asset('img/whipala.jpeg') }}');
         background-size: cover;
         background-position: center;
       }

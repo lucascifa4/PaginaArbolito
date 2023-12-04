@@ -6,12 +6,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h2><strong>Cantidad de Votos</strong></h2>
+          <h2>Cantidad de Votos</h2>
           <ul>
-          <li><h5><strong>Remera Varón: {{$votos1}} Votos</strong></li></h5>
-          <li><h5><strong>Remera Mujer: {{$votos2}} Votos</strong></li></h5>
-          <li><h5><strong>Campera azúl: {{$votos3}} Votos</strong></li></h5>
-          <li><h5><strong>Campera verde: {{$votos4}} Votos</strong></li></h5>
+            <li><h5>Campera verde: {{$votos1}} Votos</li></h5>
+            <li><h5>Campera azúl: {{$votos2}} Votos</li></h5>
+          <li><h5>Remera Varón: {{$votos3}} Votos</li></h5>
+          <li><h5>Remera Mujer: {{$votos4}} Votos</li></h5>
           </ul>
           <p><strong>Para votar, simplemente haga clic en el botón "Votar" junto a la opción que prefiera.</strong></p>
           <p><strong>Recuerde que puede visitar nuestro sitio oficial para obtener más información.</strong></p>
@@ -24,7 +24,7 @@
     </div>
     <style>
       .modal-content {
-        background-image: url('{{ asset('img/whipala.jpeg') }}'); 
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ asset('img/whipala.jpeg') }}');
         background-size: cover;
         background-position: center;
       }

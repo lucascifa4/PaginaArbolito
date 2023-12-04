@@ -73,6 +73,51 @@ main {
     max-width: fit-content;
     margin: auto;
 }
+
+@media (max-width: 576px) {
+    .container {
+      width: 100%;
+    }
+  
+    #carouselExample {
+        margin-bottom: 20px;
+    }
+  
+    #mail {
+      display: block;
+    }
+  }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      width: 75%;
+    }
+  
+    #carouselExample {
+      width: 75%;
+      margin-bottom: 20px;
+    }
+  
+    #mail {
+      display: block;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .container {
+      width: 50%;
+    }
+  
+    #carouselExample {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+  
+    #mail {
+      display: block;
+    }
+  }
+ 
 .slide-bottom {
 	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

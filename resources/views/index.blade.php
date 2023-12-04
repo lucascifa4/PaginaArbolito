@@ -2,6 +2,11 @@
 
 @section('content')
 <section class="mt-3 ">
+    @if(session('mensaje'))
+        <div class="alert alert-success">
+            {{ session('mensaje') }}
+        </div>
+    @endif
     <form action="{{ route('store.voto') }}" method="post">
         @csrf
         @method('post')
@@ -30,7 +35,7 @@
             </button>
             <input type="hidden" name="voto" value="" id="voto">
             <button type="submit" class="w-100 btn-success" id="btn-votar">Votar</button> 
-            <div>     
+            <div id= "mail" style="display: block;">     
                 <label for="mail" class="form-label"></label>
                 <input type="text" name="mail" id="mail" class="form-control" aria-describedby="email" required>
                 <div id="email" class="form-text">
